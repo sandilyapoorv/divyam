@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+.pytest_cache/
+*.db
+*.sqlite3
+chroma_db/
+pdf_preview/
+node_modules/
+.next/
+out/
+.env
+.superpowers/
