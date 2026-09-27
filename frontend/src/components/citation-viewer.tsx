@@ -60,7 +60,7 @@ export default function CitationViewer({ citation }: CitationViewerProps) {
           )}
 
           <p className="text-[10px] text-slate-400 italic">
-            Exact grounding verified by DRIVYAM RAG Engine against MoSPI Official Statistical Manuals.
+            Exact grounding verified by DIVYAM RAG Engine against MoSPI Official Statistical Manuals.
           </p>
         </div>
       )}

@@ -38,11 +38,11 @@ export default function Navbar() {
           <div className="flex items-center space-x-3">
             <Link href="/" className="flex items-center space-x-3 group">
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-saffron-500 to-amber-600 flex items-center justify-center font-bold text-white shadow-md group-hover:scale-105 transition-transform">
-                <span className="text-xl tracking-tighter">द्रि</span>
+                <span className="text-xl tracking-tighter">दि</span>
               </div>
               <div>
                 <div className="flex items-center space-x-2">
-                  <span className="font-extrabold text-xl tracking-tight text-white">DRIVYAM</span>
+                  <span className="font-extrabold text-xl tracking-tight text-white">DIVYAM</span>
                   <span className="text-[10px] font-semibold tracking-wider uppercase px-1.5 py-0.5 rounded bg-saffron-500/20 text-saffron-400 border border-saffron-500/30">
                     SIH26101
                   </span>

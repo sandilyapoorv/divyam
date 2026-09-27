@@ -19,7 +19,7 @@ def test_api_endpoints():
     res = client.get("/health")
     assert res.status_code == 200
     assert res.json()["status"] == "ok"
-    assert res.json()["project"] == "DRIVYAM"
+    assert res.json()["project"] == "DIVYAM"
 
     # 2. Auth endpoints
     login_res = client.post("/api/auth/login", json={"email": "officer.sharma@mospi.gov.in"})

@@ -1,8 +1,8 @@
-# Project Drivyam (SIH26101) Implementation Plan
+# Project Divyam (SIH26101) Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Build and integrate DRIVYAM, an AI-enabled learning & capacity building platform for India's Official Statistical System (MoSPI) that identifies FRAC competency gaps, recommends personalized iGOT Karmayogi courses, and generates verified Bloom's taxonomy quizzes with document citations from uploaded statistical manuals.
+**Goal:** Build and integrate DIVYAM, an AI-enabled learning & capacity building platform for India's Official Statistical System (MoSPI) that identifies FRAC competency gaps, recommends personalized iGOT Karmayogi courses, and generates verified Bloom's taxonomy quizzes with document citations from uploaded statistical manuals.
 
 **Architecture:** A high-performance Python FastAPI backend delivering FRAC competency analytics, iGOT Karmayogi course matching, and LangChain/ChromaDB RAG quiz generation, coupled with a responsive Next.js 14 App Router frontend featuring dynamic Recharts radar visualizations and interactive assessment players.
 

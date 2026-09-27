@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-DRIVYAM - Complete End-to-End System Integration Test
+DIVYAM - Complete End-to-End System Integration Test
 Smart India Hackathon (SIH26101)
 
 Verifies the entire lifecycle:
@@ -24,7 +24,7 @@ from backend.app.models.user import User
 
 def run_e2e_verification():
     print("=" * 70)
-    print(" DRIVYAM (SIH26101) - Comprehensive End-to-End System Verification")
+    print(" DIVYAM (SIH26101) - Comprehensive End-to-End System Verification")
     print("=" * 70)
 
     # 1. Initialize DB and seed authentic MoSPI data
@@ -44,7 +44,7 @@ def run_e2e_verification():
     health = client.get("/health")
     assert health.status_code == 200
     assert health.json()["status"] == "ok"
-    print("  [✓] Backend Health API OK: DRIVYAM service active.")
+    print("  [✓] Backend Health API OK: DIVYAM service active.")
 
     auth_resp = client.post("/api/auth/login", json={
         "email": "officer.sharma@mospi.gov.in"
@@ -160,10 +160,10 @@ def run_e2e_verification():
     print(f"  [✓] Initial Readiness Index: {initial_readiness:.1f}%")
     print(f"  [✓] Updated Readiness Index: {updated_readiness:.1f}%")
     assert updated_readiness >= initial_readiness, "Readiness index should improve or maintain post-test"
-    print(f"  [✓] Competency growth successfully registered in DRIVYAM system!")
+    print(f"  [✓] Competency growth successfully registered in DIVYAM system!")
 
     print("\n" + "=" * 70)
-    print(" [ALL PHASES PASSED] DRIVYAM End-to-End System Verified Successfully!")
+    print(" [ALL PHASES PASSED] DIVYAM End-to-End System Verified Successfully!")
     print("=" * 70)
 
 if __name__ == "__main__":

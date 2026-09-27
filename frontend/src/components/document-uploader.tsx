@@ -72,7 +72,7 @@ export default function DocumentUploader({ onUploadSuccess }: DocumentUploaderPr
       };
       setUploadMessage({
         type: 'success',
-        text: `Document "${mockDoc.title}" successfully ingested and indexed into DRIVYAM vector store (${mockDoc.total_chunks} chunks).`,
+        text: `Document "${mockDoc.title}" successfully ingested and indexed into DIVYAM vector store (${mockDoc.total_chunks} chunks).`,
       });
       setFile(null);
       setTitle('');

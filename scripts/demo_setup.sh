@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# DRIVYAM - Smart India Hackathon (SIH26101) One-Click Demo Setup
+# DIVYAM - Smart India Hackathon (SIH26101) One-Click Demo Setup
 # MoSPI Official Statistical Capacity Building & iGOT Karmayogi Platform
 # ==============================================================================
 
@@ -10,7 +10,7 @@ PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$PROJECT_ROOT"
 
 echo "======================================================================"
-echo "    DRIVYAM: Official Statistical System AI Capacity Platform"
+echo "    DIVYAM: Official Statistical System AI Capacity Platform"
 echo "    SIH Problem Statement: SIH26101 (MoSPI & Karmayogi Bharat)"
 echo "======================================================================"
 
@@ -43,7 +43,7 @@ fi
 
 echo ""
 echo "======================================================================"
-echo " [SUCCESS] DRIVYAM is fully prepared for Demonstration!"
+echo " [SUCCESS] DIVYAM is fully prepared for Demonstration!"
 echo "======================================================================"
 echo ""
 echo " To launch the application in development mode:"

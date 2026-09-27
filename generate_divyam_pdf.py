@@ -32,7 +32,7 @@ class NumberedCanvas(canvas.Canvas):
         self.saveState()
         self.setFont("Helvetica-Bold", 8)
         self.setFillColor(colors.HexColor("#1A365D")) # Deep Navy
-        self.drawString(54, letter[1] - 34, "DRIVYAM: Official Statistical Learning & Competency Platform")
+        self.drawString(54, letter[1] - 34, "DIVYAM: Official Statistical Learning & Competency Platform")
         self.setFont("Helvetica", 8)
         self.setFillColor(colors.HexColor("#718096"))
         self.drawRightString(letter[0] - 54, letter[1] - 34, "SIH26101 | MoSPI & iGOT Karmayogi")
@@ -151,7 +151,7 @@ def create_flowchart_karmayogi():
     return d
 
 
-def generate_drivyam_pdf(filename="drivyam.pdf"):
+def generate_divyam_pdf(filename="divyam.pdf"):
     doc = SimpleDocTemplate(
         filename,
         pagesize=letter,
@@ -267,7 +267,7 @@ def generate_drivyam_pdf(filename="drivyam.pdf"):
     story.append(banner_table)
     story.append(Spacer(1, 40))
     
-    story.append(Paragraph("PROJECT DRIVYAM", title_style))
+    story.append(Paragraph("PROJECT DIVYAM", title_style))
     story.append(Spacer(1, 10))
     story.append(Paragraph("AI-Enabled Competency Gap Identification, iGOT Karmayogi Personalized Training Recommendation & Bloom's RAG Assessment Platform", subtitle_style))
     story.append(Spacer(1, 24))
@@ -293,7 +293,7 @@ def generate_drivyam_pdf(filename="drivyam.pdf"):
     exec_summary_box = [
         [Paragraph("<b>SYSTEM ARCHITECTURE & CAPABILITY SUMMARY</b>", ParagraphStyle('EbT', fontName='Helvetica-Bold', fontSize=10, textColor=primary_color))],
         [Paragraph(
-            "<b>DRIVYAM</b> addresses the critical capacity-building mandate of India's Official Statistical System under MoSPI. "
+            "<b>DIVYAM</b> addresses the critical capacity-building mandate of India's Official Statistical System under MoSPI. "
             "By synthesizing civil service competency modeling (FRAC framework), automated learning path generation via the iGOT Karmayogi ecosystem, "
             "and an advanced Retrieval-Augmented Generation (RAG) assessment engine, the platform enables continuous, verified upskilling for "
             "cadre officers (ISS, SSS, State DES) and grassroots survey investigators across the nation.",
@@ -388,7 +388,7 @@ def generate_drivyam_pdf(filename="drivyam.pdf"):
     story.append(HRFlowable(width="100%", thickness=1.5, color=primary_color, spaceBefore=2, spaceAfter=8))
     
     story.append(Paragraph(
-        "DRIVYAM is engineered as a production-grade, modular full-stack platform. The architecture separates presentation logic "
+        "DIVYAM is engineered as a production-grade, modular full-stack platform. The architecture separates presentation logic "
         "(Next.js 14 App Router) from high-throughput AI and competency analytics (FastAPI asynchronous micro-services), backed by "
         "PostgreSQL for relational integrity and ChromaDB for vector retrieval.",
         body_style
@@ -396,7 +396,7 @@ def generate_drivyam_pdf(filename="drivyam.pdf"):
     
     story.append(create_flowchart_architecture())
     story.append(Spacer(1, 6))
-    story.append(Paragraph("<i>Figure 1: High-level System Architecture of DRIVYAM showing interaction between Presentation, Core Engine, and Persistence layers.</i>", ParagraphStyle('FigC', fontName='Helvetica-Oblique', fontSize=7.5, textColor=colors.HexColor("#718096"), alignment=1)))
+    story.append(Paragraph("<i>Figure 1: High-level System Architecture of DIVYAM showing interaction between Presentation, Core Engine, and Persistence layers.</i>", ParagraphStyle('FigC', fontName='Helvetica-Oblique', fontSize=7.5, textColor=colors.HexColor("#718096"), alignment=1)))
     story.append(Spacer(1, 8))
     
     tech_data = [
@@ -429,14 +429,14 @@ def generate_drivyam_pdf(filename="drivyam.pdf"):
     
     story.append(Paragraph(
         "Karmayogi Bharat establishes the <b>FRAC model</b> (Framework for Roles, Activities, and Competencies) to transition civil service "
-        "human resource management from 'rules-based' to 'roles-based'. DRIVYAM adopts this exact ontology specifically calibrated for "
+        "human resource management from 'rules-based' to 'roles-based'. DIVYAM adopts this exact ontology specifically calibrated for "
         "India's statistical cadre hierarchy.",
         body_style
     ))
     
     story.append(create_flowchart_karmayogi())
     story.append(Spacer(1, 4))
-    story.append(Paragraph("<i>Figure 2: The DRIVYAM Competency Lifecycle and iGOT Karmayogi Closed-Loop Learning Progression.</i>", ParagraphStyle('FigC2', fontName='Helvetica-Oblique', fontSize=7.5, textColor=colors.HexColor("#718096"), alignment=1)))
+    story.append(Paragraph("<i>Figure 2: The DIVYAM Competency Lifecycle and iGOT Karmayogi Closed-Loop Learning Progression.</i>", ParagraphStyle('FigC2', fontName='Helvetica-Oblique', fontSize=7.5, textColor=colors.HexColor("#718096"), alignment=1)))
     story.append(Spacer(1, 6))
 
     story.append(Paragraph("FRAC Competency Classification in Official Statistics", h2_style))
@@ -513,7 +513,7 @@ def generate_drivyam_pdf(filename="drivyam.pdf"):
     story.append(HRFlowable(width="100%", thickness=1.5, color=primary_color, spaceBefore=2, spaceAfter=8))
     
     story.append(Paragraph(
-        "A cornerstone of DRIVYAM is transforming extensive government manuals (e.g. 200-page PLFS Instructions to Field Staff) "
+        "A cornerstone of DIVYAM is transforming extensive government manuals (e.g. 200-page PLFS Instructions to Field Staff) "
         "into verifiable, pedagogically structured learning checkpoints. The pipeline prevents AI hallucinations by binding every question "
         "to explicit document coordinates.",
         body_style
@@ -566,7 +566,7 @@ def generate_drivyam_pdf(filename="drivyam.pdf"):
 
     story.append(Paragraph("Hallucination Prevention & Citation Verification Protocol", h2_style))
     story.append(Paragraph(
-        "To guarantee 100% fidelity to official government manuals, DRIVYAM enforces a <b>strict citation contract</b>. "
+        "To guarantee 100% fidelity to official government manuals, DIVYAM enforces a <b>strict citation contract</b>. "
         "During generation, the LLM is constrained by system prompts requiring JSON output adhering to: "
         "<code>{\"citation\": {\"document\": string, \"page\": int, \"section\": string, \"verbatim_excerpt\": string}}</code>. "
         "Any question lacking an exact excerpt match in the retrieved chunk is discarded during automated validation.",
@@ -608,7 +608,7 @@ def generate_drivyam_pdf(filename="drivyam.pdf"):
     story.append(HRFlowable(width="100%", thickness=1.5, color=primary_color, spaceBefore=2, spaceAfter=6))
     
     eval_data = [
-        [Paragraph("<b>Evaluation Criterion</b>", table_header_style), Paragraph("<b>SIH Expectation</b>", table_header_style), Paragraph("<b>How DRIVYAM Exceeds Expectations</b>", table_header_style)],
+        [Paragraph("<b>Evaluation Criterion</b>", table_header_style), Paragraph("<b>SIH Expectation</b>", table_header_style), Paragraph("<b>How DIVYAM Exceeds Expectations</b>", table_header_style)],
         [
             Paragraph("<b>Innovation & AI Depth</b>", table_cell_style),
             Paragraph("Meaningful use of Generative AI beyond generic chat.", table_cell_style),
@@ -648,7 +648,7 @@ def generate_drivyam_pdf(filename="drivyam.pdf"):
     closing_box = [
         [Paragraph("<b>CONFIRMATION & DEPLOYMENT SIGN-OFF</b>", ParagraphStyle('CbT', fontName='Helvetica-Bold', fontSize=8.5, textColor=primary_color))],
         [Paragraph(
-            "<b>DRIVYAM: Official Statistical Learning & Competency Platform</b> is primed for live execution and staging. "
+            "<b>DIVYAM: Official Statistical Learning & Competency Platform</b> is primed for live execution and staging. "
             "All functional flows, schemas, data contracts, and presentation designs are validated and synchronized across project memory.",
             ParagraphStyle('CbB', fontName='Helvetica', fontSize=8, leading=12, textColor=text_color)
         )]
@@ -668,4 +668,4 @@ def generate_drivyam_pdf(filename="drivyam.pdf"):
     print(f"Successfully generated {filename}")
 
 if __name__ == "__main__":
-    generate_drivyam_pdf("drivyam.pdf")
+    generate_divyam_pdf("divyam.pdf")

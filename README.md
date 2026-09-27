@@ -1,11 +1,11 @@
-# DRIVYAM: AI-Enabled Capacity Building Platform for India's Official Statistical System
+# DIVYAM: AI-Enabled Capacity Building Platform for India's Official Statistical System
 
 [![Smart India Hackathon 2024](https://img.shields.io/badge/SIH%20Problem%20Statement-SIH26101-orange.svg)](https://sih.gov.in)
 [![MoSPI Official Cadres](https://img.shields.io/badge/Target%20Cadres-ISS%20%7C%20SSS-blue.svg)](https://mospi.gov.in)
 [![iGOT Karmayogi](https://img.shields.io/badge/Integration-iGOT%20Karmayogi%20Bharat-green.svg)](https://karmayogi.gov.in)
 [![Tests Passing](https://img.shields.io/badge/Tests-8%20Passed-brightgreen.svg)]()
 
-> **DRIVYAM** (*द्रिव्यम्*) is an end-to-end, production-grade AI capacity building platform designed for the **Ministry of Statistics and Programme Implementation (MoSPI)** to strengthen India's Official Statistical System across the **Indian Statistical Service (ISS)** and **Subordinate Statistical Service (SSS)**.
+> **DIVYAM** (*दिव्यम्*) is an end-to-end, production-grade AI capacity building platform designed for the **Ministry of Statistics and Programme Implementation (MoSPI)** to strengthen India's Official Statistical System across the **Indian Statistical Service (ISS)** and **Subordinate Statistical Service (SSS)**.
 
 ---
 
@@ -13,7 +13,7 @@
 
 In India's official statistical apparatus, statistical officers routinely execute critical statutory mandates—such as compiling the **System of National Accounts (SNA 2008)**, administering the **Periodic Labour Force Survey (PLFS)**, and calculating **Consumer Price Indices (CPI)**. 
 
-**DRIVYAM** directly solves Problem Statement **SIH26101** by delivering:
+**DIVYAM** directly solves Problem Statement **SIH26101** by delivering:
 1. **Government of India FRAC Competency Gap Engine**: Evaluates officers across Domain, Functional, and Behavioural competencies against Level 1–5 benchmarks, generating dynamic multi-axis Radar Gap Charts.
 2. **Deficit-Prioritized iGOT Karmayogi Adapter**: Discovers and recommends authentic MoSPI courses on Karmayogi Bharat prioritized by statutory criticality weights (`Priority = Gap × Weight`).
 3. **Zero-Hallucination RAG Assessment Generator**: Ingests official MoSPI statistical manuals (PDF/DOCX), vectors them in ChromaDB, and generates 4-tier Bloom's Taxonomy MCQs with exact page citations and excerpts.
@@ -74,7 +74,7 @@ $$\text{Priority Score}_i = \text{Gap}_i \times w_i$$
 
 ## 🌟 Key Capabilities
 
-| Capability | Official MoSPI Standard | DRIVYAM Implementation |
+| Capability | Official MoSPI Standard | DIVYAM Implementation |
 |---|---|---|
 | **Ontology** | GoI FRAC Framework | Roles, Activities, Domain/Functional/Behavioural Competencies (Levels 1–5) |
 | **iGOT Integration** | Karmayogi Bharat Platform | Deficit-prioritized recommendation adapter with direct course links |
@@ -163,7 +163,7 @@ PYTHONPATH=. .venv/bin/python tests/e2e_verification.py
 ## 📂 Project Structure
 
 ```
-drishyam/
+divyam/
 ├── backend/
 │   ├── app/
 │   │   ├── api/             # FastAPI REST Routers (auth, competencies, igot, documents, quizzes)
@@ -194,7 +194,7 @@ drishyam/
 │   └── e2e_verification.py  # 7-Phase End-to-End System Test
 ├── scripts/
 │   └── demo_setup.sh        # One-click evaluation launch script
-├── drivyam.pdf              # 6-Page Executive Blueprint & Technical Specification
+├── divyam.pdf               # 6-Page Executive Blueprint & Technical Specification
 ├── docker-compose.yml       # Production container orchestration
 └── README.md                # Hackathon pitch & technical documentation
 ```

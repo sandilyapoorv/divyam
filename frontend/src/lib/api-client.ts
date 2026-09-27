@@ -1,5 +1,5 @@
 /**
- * DRIVYAM Typed API Client
+ * DIVYAM Typed API Client
  * Connecting Next.js Frontend to FastAPI Backend
  */
 
@@ -152,14 +152,14 @@ class ApiClient {
   constructor(baseUrl: string) {
     this.baseUrl = baseUrl;
     if (typeof window !== 'undefined') {
-      this.token = localStorage.getItem('drivyam_token');
+      this.token = localStorage.getItem('divyam_token');
     }
   }
 
   setToken(token: string) {
     this.token = token;
     if (typeof window !== 'undefined') {
-      localStorage.setItem('drivyam_token', token);
+      localStorage.setItem('divyam_token', token);
     }
   }
 
@@ -170,7 +170,7 @@ class ApiClient {
   logout() {
     this.token = null;
     if (typeof window !== 'undefined') {
-      localStorage.removeItem('drivyam_token');
+      localStorage.removeItem('divyam_token');
     }
   }
 

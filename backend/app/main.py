@@ -57,7 +57,7 @@ def health_check():
 @app.get("/")
 def root():
     return {
-        "message": "Welcome to DRIVYAM Official Statistical Learning Platform API",
+        "message": "Welcome to DIVYAM Official Statistical Learning Platform API",
         "docs_url": "/docs",
         "health_url": "/health"
     }

@@ -5,17 +5,17 @@ services:
     build:
       context: .
       dockerfile: backend/Dockerfile
-    container_name: drivyam-backend
+    container_name: divyam-backend
     ports:
       - "8000:8000"
     environment:
       - PORT=8000
       - HOST=0.0.0.0
-      - DATABASE_URL=sqlite:///./drivyam.db
+      - DATABASE_URL=sqlite:///./divyam.db
       - CHROMA_DB_DIR=/app/data/chromadb
-      - JWT_SECRET=drivyam-sih26101-national-secret-key-change-in-prod
+      - JWT_SECRET=divyam-sih26101-national-secret-key-change-in-prod
     volumes:
-      - drivyam-data:/app/data
+      - divyam-data:/app/data
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/api/auth/me"]
@@ -28,7 +28,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    container_name: drivyam-frontend
+    container_name: divyam-frontend
     ports:
       - "3000:3000"
     environment:
@@ -38,4 +38,4 @@ services:
     restart: unless-stopped
 
 volumes:
-  drivyam-data:
+  divyam-data:

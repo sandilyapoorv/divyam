@@ -2,13 +2,13 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 from typing import Optional
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str = "DRIVYAM"
+    PROJECT_NAME: str = "DIVYAM"
     PROJECT_DESCRIPTION: str = "AI-Enabled Competency & Learning Platform for India's Official Statistical System (MoSPI)"
     VERSION: str = "1.0.0"
     API_V1_STR: str = "/api"
     
     # Database: defaults to local SQLite, overridable via DATABASE_URL for Postgres
-    DATABASE_URL: str = "sqlite:///./drivyam.db"
+    DATABASE_URL: str = "sqlite:///./divyam.db"
     
     # AI / LLM Keys (Optional - gracefully falls back to deterministic local mock / heuristic parser)
     GEMINI_API_KEY: Optional[str] = None

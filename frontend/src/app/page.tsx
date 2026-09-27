@@ -31,7 +31,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            <strong>DRIVYAM</strong> integrates the Government of India FRAC competency framework with the 
+            <strong>DIVYAM</strong> integrates the Government of India FRAC competency framework with the 
             <strong> iGOT Karmayogi</strong> ecosystem and RAG-driven Bloom&apos;s Taxonomy question generation 
             from MoSPI statistical manuals—accelerating capacity building across ISS &amp; SSS cadres.
           </p>

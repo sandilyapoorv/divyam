@@ -3,7 +3,7 @@ from sqlalchemy import text
 
 def test_settings_load():
     from backend.app.core.config import settings
-    assert settings.PROJECT_NAME == "DRIVYAM"
+    assert settings.PROJECT_NAME == "DIVYAM"
     assert "sqlite" in settings.DATABASE_URL or "postgresql" in settings.DATABASE_URL
     assert settings.API_V1_STR == "/api"
 
